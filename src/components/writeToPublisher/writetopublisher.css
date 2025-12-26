@@ -1,0 +1,72 @@
+.write {
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto;
+
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.write__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+
+.write__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.write__label {
+  font-size: 14px;
+  color: #555;
+}
+
+.write__input,
+.write__select,
+.write__textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  resize: none;
+}
+
+.write__input:focus,
+.write__select:focus,
+.write__textarea:focus {
+  border-color: #3b6cff;
+}
+
+.write__button {
+  margin-top: 8px;
+  padding: 12px 24px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+
+  background-color: #3b6cff;
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.write__button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

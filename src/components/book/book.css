@@ -1,0 +1,63 @@
+.book {
+  width: 100%;
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 👇 ВАЖНО: transition */
+.book__image {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+
+  transition: transform 0.25s ease;
+}
+
+/* 👇 Анимация */
+.book__image:hover {
+  transform: scale(0.95);
+}
+
+.book__info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.book__author {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.book__title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #3b6cff;
+}
+
+.book__description {
+  font-size: 14px;
+  color: #666;
+}
+.book__image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+}

@@ -1,0 +1,51 @@
+:root {
+
+}
+
+
+
+body {
+  margin:0px;
+  padding:0px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/Playfair_Display/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic 400 */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Regular 500 */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/Playfair_Display/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Italic 500 */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
