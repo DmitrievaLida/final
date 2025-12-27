@@ -42,6 +42,7 @@ const WriteToPublisher = () => {
         <input
           type="email"
           className="write__input"
+          placeholder="Электронная почта"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
