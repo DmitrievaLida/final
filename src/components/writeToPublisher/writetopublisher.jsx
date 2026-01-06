@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "./WriteToPublisher.css";
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 const WriteToPublisher = () => {
   const [topic, setTopic] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
+  const [emailTouched, setEmailTouched] = useState(false);
 
-  const isDisabled = !topic || !message || !email;
+  const isEmailValid = emailRegex.test(email);
+  const showEmailError = emailTouched && email && !isEmailValid;
+
+  const isDisabled = !topic || !message || !email || !isEmailValid;
 
   return (
     <div className="write">
@@ -41,8 +47,10 @@ const WriteToPublisher = () => {
         <label className="write__label">Электронная почта</label>
         <input
           type="email"
-          className="write__input"
-          placeholder="Электронная почта"
+          className={'write__input ${
+            showEmailError ? "write__input--error" : ""
+          }'}  
+          placeholder="example@mail.ru"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
